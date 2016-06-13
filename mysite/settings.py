@@ -1,3 +1,5 @@
+from settings_secret import *
+
 """
 Django settings for mysite project.
 
@@ -20,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5wp0(v%=w+fma(7t_)6vn1969mqf4hdp#hrd*_l&%4=+6wr+ph'
+#Removed the SECRET_KEY so I could store the code on github.
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
