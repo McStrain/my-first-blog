@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
+    #url(r'^ckeditor/', include('ckeditor.urls')),    #Added from video: https://www.youtube.com/watch?v=W8PTD7SszDI 
 ]

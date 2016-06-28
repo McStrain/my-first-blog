@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'blog',
+    'blog',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
+
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -127,3 +131,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #Added as part of Django Girls tutorial, the extensions section.
 LOGIN_REDIRECT_URL = '/'
+
+# Added from Youtube video: https://www.youtube.com/watch?v=W8PTD7SszDI
+MEDIA_URL = '/media/'
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+    },
+}
+
+
